@@ -8,8 +8,8 @@ import java.nio.file.StandardOpenOption;
 public class RouteGenerationUtil {
 
     private static int routeLength = 100;
-    private static int numberOfRoutes = 50000;
-    private static int numberOfStations = 1000000;
+    private static int numberOfRoutes = 10000;
+    private static int numberOfStations = 1000;
 
     public static void generateRoutesFile(String fileName) throws IOException {
         String headLine = numberOfRoutes + "\n";
@@ -43,9 +43,14 @@ public class RouteGenerationUtil {
         return line.toString();
     }
 
+    /**
+     * Manual test method for generating routes files.
+     *
+     * @throws IOException
+     */
 //    @Test
     public void generateRouteFile() throws IOException {
-        String fileName = "data/LargeRoutesFile.txt";
+        String fileName = "data/RoutesFile.txt";
         RouteGenerationUtil.generateRoutesFile(fileName);
     }
 
