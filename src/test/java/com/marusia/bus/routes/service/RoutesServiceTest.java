@@ -28,7 +28,7 @@ public class RoutesServiceTest {
 
     @BeforeClass
     public static void setUp() throws FileNotFoundException {
-        service.loadRoutes("data/SmallRoutesFile.txt");
+        service.loadRoutes("src/test/resources/data/SmallRoutesFile.txt");
     }
 
     @Parameterized.Parameters(name = "{index}: testCheckStationsConnected({0},{1}): {2}")
